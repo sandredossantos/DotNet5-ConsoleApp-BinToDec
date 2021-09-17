@@ -5,4 +5,14 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BinToDec.Domain\BinToDec.Domain.csproj" />
+    <ProjectReference Include="..\BinToDec.Service\BinToDec.Service.csproj" />
+  </ItemGroup>
+
 </Project>

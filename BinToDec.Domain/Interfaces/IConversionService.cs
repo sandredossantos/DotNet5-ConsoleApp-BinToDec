@@ -2,6 +2,6 @@
 {
     public interface IConversionService
     {
-        int ConvertBinaryToDecimal(string binary);
+        int ConvertBinaryToDecimal(int[] binary);
     }
 }

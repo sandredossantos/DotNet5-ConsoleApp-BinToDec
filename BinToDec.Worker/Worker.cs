@@ -1,7 +1,9 @@
-﻿using BinToDec.Domain.Interfaces;
+﻿using BinToDec.Domain.Entities;
+using BinToDec.Domain.Interfaces;
 using BinToDec.Service;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
 
 namespace BinToDec.Worker
 {
@@ -21,7 +23,7 @@ namespace BinToDec.Worker
 
         public void Run()
         {
-            int value = _conversionService.ConvertBinaryToDecimal("");
+            int value = _conversionService.ConvertBinaryToDecimal(new int[] { 1, 1, 1, 1 });
         }
 
         private static IHostBuilder CreateHostBuilder(string[] args)
